@@ -1,4 +1,5 @@
 lib
+use/*/
 /Lazarus/apiUi/*.exe
 /Lazarus/apiUiServer/*.exe
 /Lazarus/apiUi
