@@ -38,7 +38,7 @@ Function Build-Project {
     $VAR = @{
         Use = 'use'
         Cmd = 'lazbuild'
-        Url = 'https://netix.dl.sourceforge.net/project/lazarus/Lazarus%20Windows%2064%20bits/Lazarus%203.6/lazarus-3.6-fpc-3.2.2-win64.exe?viasf=1'
+        Url = 'https://fossies.org/windows/misc/lazarus-3.6-fpc-3.2.2-win64.exe'
         Path = "C:\Lazarus"
     }
     Try {
@@ -66,7 +66,7 @@ Function Build-Project {
             & $VAR.Cmd --add-package-link $_ | Out-Host
         }
     }
-    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'src' | ForEach-Object {
+    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus' | ForEach-Object {
         & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
     }
 }
