@@ -630,8 +630,8 @@ function RegExprSubExpressions (const ARegExpr : string;
 
 implementation
 
-uses
- Windows; // CharUpper/Lower
+//uses
+// Windows; // CharUpper/Lower
 
 const
  TRegExprVersionMajor : integer = 0;
