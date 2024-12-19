@@ -31,7 +31,7 @@ jobs:
 
     - name: Build on Linux
       if: runner.os == 'Linux'
-      shell: powershell
+      shell: bash
       run: bash -x make.sh build
 
     - name: Build on Windows
