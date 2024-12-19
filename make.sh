@@ -55,7 +55,7 @@ function priv_lazbuild
         if ! (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 "${REPLY}"); then
             lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 "${REPLY}" 1>&2
         fi
-    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(RegExpr|StompInterface|Xml|Xpress)' | sort)
+    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(RegExpr|Xml|Xpress)' | sort)
 )
 
 function priv_main
