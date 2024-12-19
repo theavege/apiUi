@@ -67,7 +67,7 @@ Function Build-Project {
         }
     }
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus' | ForEach-Object {
-        if ! (& $VAR.Cmd --no-write-project --recursive $_) {
+        If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
             & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
             Throw "Error!"
         }
