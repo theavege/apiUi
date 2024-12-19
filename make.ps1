@@ -53,8 +53,8 @@ Function Build-Project {
         $COMPONENTS = "$($VAR.Use)\components.txt"
         If (Test-Path -Path $COMPONENTS) {
             Get-Content -Path $COMPONENTS | ForEach-Object {
-                If ((! (& $VAR.Cmd --verbose-pkgsearch $_ | Out-Null)) &&
-                    (! (& $VAR.Cmd --add-package $_ | Out-Null)) &&
+                If ((! (& $VAR.Cmd --verbose-pkgsearch $_ )) &&
+                    (! (& $VAR.Cmd --add-package $_)) &&
                     (! (Test-Path -Path "$($VAR.Use)\$($_)"))) {
                         $OutFile = Request-File "https://packages.lazarus-ide.org/$($_).zip"
                         Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Use)\$($_)" -Force
@@ -62,16 +62,20 @@ Function Build-Project {
                     }
             }
         }
-        Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use' | ForEach-Object {
+        Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use'| Sort-Object | ForEach-Object {
+            "Dependence $($_)" | Out-Host
             & $VAR.Cmd --add-package-link $_ | Out-Host
         }
     }
-    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus' | ForEach-Object {
+    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
+        "Project $($_)" | Out-Host
         If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
+            $_ | Out-Host
             & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
             Throw "Error!"
         }
     }
+    "Done!" | Out-Host
 }
 
 Function Switch-Action {
