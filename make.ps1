@@ -44,6 +44,7 @@ Function Build-Project {
     Try {
         Get-Command $VAR.Cmd
     } Catch {
+        "    install $($VAR.Path)" | Out-Host
         Request-File $VAR.Url | Install-Program
         $env:PATH+=";$($VAR.Path)"
         Get-Command $VAR.Cmd
