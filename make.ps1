@@ -56,6 +56,7 @@ Function Build-Project {
                 If ((! (& $VAR.Cmd --verbose-pkgsearch $_ )) &&
                     (! (& $VAR.Cmd --add-package $_)) &&
                     (! (Test-Path -Path "$($VAR.Use)\$($_)"))) {
+                        "    download package $($_)" | Out-Host
                         $OutFile = Request-File "https://packages.lazarus-ide.org/$($_).zip"
                         Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Use)\$($_)" -Force
                         Remove-Item $OutFile
@@ -63,15 +64,15 @@ Function Build-Project {
             }
         }
         Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use'| Sort-Object | ForEach-Object {
-            "Add dependence $($_)" | Out-Host
+            "    add dependence $($_)" | Out-Host
             & $VAR.Cmd --add-package-link $_ | Out-Host
         }
     }
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
-        "Build project $($_)" | Out-Host
+        "    build project $($_)" | Out-Host
         If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
-            & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
-            Throw "Error!"
+            & $VAR.Cmd --no-write-project --recursive --build-mode=release $_ | Out-Host
+            Throw "Error!!!"
         }
     }
     "Done!" | Out-Host
