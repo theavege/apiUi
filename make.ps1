@@ -53,6 +53,7 @@ Function Build-Project {
         & git submodule update --init --recursive --force --remote | Out-Host
         $COMPONENTS = "$($VAR.Use)\components.txt"
         If (Test-Path -Path $COMPONENTS) {
+            'Download packages' | Out-Host
             Get-Content -Path $COMPONENTS | ForEach-Object {
                 If ((! (& $VAR.Cmd --verbose-pkgsearch $_ )) &&
                     (! (& $VAR.Cmd --add-package $_)) &&
@@ -64,14 +65,16 @@ Function Build-Project {
                     }
             }
         }
+        'Add dependencies' | Out-Host
         Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use'| Sort-Object | ForEach-Object {
             "    add dependence $($_)" | Out-Host
             & $VAR.Cmd --add-package-link $_ | Out-Host
         }
     }
+    'Build projects' | Out-Host
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
         "    build project $($_)" | Out-Host
-        If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
+        If (! (& $VAR.Cmd --no-write-project --recursive --build-mode=release $_)) {
             & $VAR.Cmd --no-write-project --recursive --build-mode=release $_ | Out-Host
             Throw "Error!!!"
         }
