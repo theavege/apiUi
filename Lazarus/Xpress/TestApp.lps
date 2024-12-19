@@ -2,8 +2,8 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
-    <BuildModes Active="Default"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
     <Units Count="34">
       <Unit0>
         <Filename Value="TestApp.lpr"/>
@@ -12,7 +12,6 @@
       </Unit0>
       <Unit1>
         <Filename Value="testappunit.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -21,14 +20,14 @@
         <TopLine Value="12"/>
         <CursorPos X="7" Y="32"/>
         <UsageCount Value="69"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\Xml\xmlio.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="9"/>
-        <CursorPos X="49" Y="13"/>
+        <TopLine Value="16"/>
+        <CursorPos X="5" Y="23"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -50,7 +49,7 @@
         <Filename Value="..\Xml\Xmlz.pas"/>
         <EditorIndex Value="1"/>
         <TopLine Value="2717"/>
-        <CursorPos X="40" Y="2728"/>
+        <CursorPos X="34" Y="2728"/>
         <UsageCount Value="64"/>
         <Loaded Value="True"/>
       </Unit5>
@@ -135,9 +134,8 @@
       <Unit21>
         <Filename Value="..\Xml\XMLPARSER.PAS"/>
         <UnitName Value="XmlParser"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="67"/>
-        <CursorPos X="50" Y="83"/>
+        <TopLine Value="71"/>
+        <CursorPos X="22" Y="83"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit21>
@@ -220,7 +218,7 @@
         <UsageCount Value="20"/>
       </Unit33>
     </Units>
-    <JumpHistory Count="14" HistoryIndex="13">
+    <JumpHistory Count="15" HistoryIndex="14">
       <Position1>
         <Filename Value="..\Xml\ShowXmlUnit.pas"/>
         <Caret Line="17" Column="3" TopLine="6"/>
@@ -276,10 +274,14 @@
         <Filename Value="..\Xml\XMLPARSER.PAS"/>
         <Caret Line="17" Column="3" TopLine="6"/>
       </Position14>
+      <Position15>
+        <Filename Value="..\Xml\XMLPARSER.PAS"/>
+        <Caret Line="83" Column="22" TopLine="71"/>
+      </Position15>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

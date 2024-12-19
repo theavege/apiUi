@@ -7,14 +7,13 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, virtualtreeview_package, TestAppUnit, xmlIo;
+  Forms, virtualtreeview_package, xmlIo;
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource := True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
 

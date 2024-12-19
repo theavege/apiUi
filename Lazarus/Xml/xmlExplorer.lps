@@ -2,8 +2,8 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="9"/>
-    <BuildModes Active="Default"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
     <Units Count="80">
       <Unit0>
         <Filename Value="xmlExplorer.lpr"/>
@@ -42,7 +42,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
         <TopLine Value="1990"/>
-        <CursorPos X="34" Y="2006"/>
+        <CursorPos X="7" Y="2006"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -70,7 +70,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="4"/>
         <TopLine Value="11"/>
-        <CursorPos X="20" Y="22"/>
+        <CursorPos Y="22"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -136,7 +136,7 @@
         <Filename Value="Xmlz.pas"/>
         <EditorIndex Value="5"/>
         <TopLine Value="1618"/>
-        <CursorPos X="56" Y="1628"/>
+        <CursorPos X="25" Y="1628"/>
         <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit15>
@@ -174,7 +174,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="15"/>
         <TopLine Value="585"/>
-        <CursorPos X="72" Y="595"/>
+        <CursorPos X="4" Y="595"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -446,7 +446,7 @@
         <UnitName Value="A2BXmlGridUnit"/>
         <EditorIndex Value="7"/>
         <TopLine Value="239"/>
-        <CursorPos X="6" Y="250"/>
+        <CursorPos Y="250"/>
         <UsageCount Value="15"/>
         <Loaded Value="True"/>
       </Unit61>
@@ -498,7 +498,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="12"/>
         <TopLine Value="820"/>
-        <CursorPos X="21" Y="787"/>
+        <CursorPos Y="787"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -579,7 +579,7 @@
       <Unit78>
         <Filename Value="..\wsdlStub\EditRegExpUnit.pas"/>
         <EditorIndex Value="9"/>
-        <CursorPos X="6"/>
+        <CursorPos X="2"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit78>
@@ -708,16 +708,20 @@
         <Caret Line="1628" Column="56" TopLine="1618"/>
       </Position29>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
   <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
+    <BreakPoints>
+      <Item>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="xmlExplorerUnit.pas"/>
         <Line Value="677"/>
-      </Item1>
+      </Item>
     </BreakPoints>
   </Debugging>
 </CONFIG>
