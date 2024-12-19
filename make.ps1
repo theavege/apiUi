@@ -63,14 +63,13 @@ Function Build-Project {
             }
         }
         Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use'| Sort-Object | ForEach-Object {
-            "Dependence $($_)" | Out-Host
+            "Add dependence $($_)" | Out-Host
             & $VAR.Cmd --add-package-link $_ | Out-Host
         }
     }
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
-        "Project $($_)" | Out-Host
+        "Build project $($_)" | Out-Host
         If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
-            $_ | Out-Host
             & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
             Throw "Error!"
         }
