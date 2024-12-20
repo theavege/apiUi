@@ -57,14 +57,14 @@ function priv_lazbuild
         declare -A VAR=(
             [out]=$(mktemp)
         )
-        if (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 --build-mode=release "${REPLY}" &> "${VAR[out]}"); then
+        if (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 --build-mode=release "${REPLY}" > "${VAR[out]}"); then
             printf '\x1b[32m\tbuild project %s\tdone.\x1b[0m\n' "${REPLY}" 1>&2
         else
             printf '\x1b[31m\tbuild project %s\tFAILD!!!\x1b[0m\n' "${REPLY}" 1>&2
             cat "${VAR[out]}" 1>&2
             ((errors+=1))
         fi
-    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(backup|nsSql|Xml|wsdlStub|StompInterface)' | sort)
+    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(backup|nsSql|RegExpr|Xml|wsdlStub|StompInterface)' | sort)
     exit "${errors}"
 )
 
