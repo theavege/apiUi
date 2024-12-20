@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
       <Flags>
         <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Title Value="apiUiServer"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
@@ -27,8 +29,93 @@
     <MacroValues Count="1">
       <Macro1 Name="LCLWidgetType" Value="nogui"/>
     </MacroValues>
-    <BuildModes Count="1">
+    <BuildModes Count="3">
       <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="apiUiServer"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\Protocols;..\wiremock;..\pegasimul8r;..\wsdlStub;..\..\use\Indy10\Indy10\Core"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf3"/>
+              <UseHeaptrc Value="True"/>
+              <TrashVariables Value="True"/>
+              <UseValgrind Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dConsoleApp
+-dUseCThreads
+-dNoGUI"/>
+            <OtherDefines Count="3">
+              <Define0 Value="ConsoleApp"/>
+              <Define1 Value="UseCThreads"/>
+              <Define2 Value="NoGUI"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="apiUiServer"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\Protocols;..\wiremock;..\pegasimul8r;..\wsdlStub;..\..\use\Indy10\Indy10\Core"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <RunWithoutDebug Value="True"/>
+              <UseValgrind Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dConsoleApp
+-dUseCThreads
+-dNoGUI"/>
+            <OtherDefines Count="3">
+              <Define0 Value="ConsoleApp"/>
+              <Define1 Value="UseCThreads"/>
+              <Define2 Value="NoGUI"/>
+            </OtherDefines>
+          </Other>
+        </CompilerOptions>
+      </Item3>
       <SharedMatrixOptions Count="1">
         <Item1 ID="532550654958" Modes="Default" Type="IDEMacro" MacroName="LCLWidgetType" Value="nogui"/>
       </SharedMatrixOptions>
@@ -53,42 +140,33 @@
         <PackageName Value="LazUtils"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="8">
+    <Units Count="6">
       <Unit0>
         <Filename Value="apiUiServer.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="..\wsdlStub\wsdlcontrolz.pas"/>
+        <Filename Value="..\Xml\Xmlz.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="..\Components\Indy10\Lib\System\IdStack.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="..\Xml\Xmlz.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="..\TacoInterface\tacoInterface.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit4>
-      <Unit5>
         <Filename Value="..\Html\htmlxmlutilz.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="htmlXmlUtilz"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="C:\lazarus\lcl\translations.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Translations"/>
-      </Unit6>
-      <Unit7>
+      </Unit2>
+      <Unit3>
         <Filename Value="..\ProgressStatus\progressinterface.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ProgressInterface"/>
-      </Unit7>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\wsdlStub\WsdlProjectz.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -99,7 +177,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\wsdlStub;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\Protocols;..\wiremock;..\pegasimul8r"/>
+      <OtherUnitFiles Value="..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\Protocols;..\wiremock;..\pegasimul8r;..\wsdlStub;..\..\use\Indy10\Indy10\Core"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

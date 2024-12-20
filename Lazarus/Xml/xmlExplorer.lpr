@@ -7,8 +7,9 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, virtualtreeview_package, xmlExplorerUnit, StdVCL, cbAbout,
-  FilterDialog, ShowXmlUnit, XmlGridUnit, VersionSupport, IdHTTP;
+  Forms, virtualtreeview_package, xmlExplorerUnit, cbAbout,
+  FilterDialog, ShowXmlUnit, XmlGridUnit, VersionSupport, indylaz,
+  FrameViewer09;
 
 {$R *.res}
 

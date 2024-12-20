@@ -80,7 +80,7 @@ begin
   configPortnumber := '3739';
   headerName := 'pegaUserId';
   hostRegExp := '.*';
-  WriteLn(_xmlProgName, ' ', _xmlProgVersion);
+  //WriteLn(_xmlProgName, ' ', _xmlProgVersion);
   if ParamCount = 0 then
   begin
     WriteLn(ExeName, ' --', helpOpt, ' for more information');

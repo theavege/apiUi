@@ -2,8 +2,8 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
-    <BuildModes Active="Default"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
     <Units Count="4">
       <Unit0>
         <Filename Value="decr.lpr"/>
@@ -157,7 +157,7 @@
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

@@ -2,17 +2,14 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="9"/>
-    <BuildModes Active="Default"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
     <Units Count="13">
       <Unit0>
         <Filename Value="wsAuthorizationServer.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="wsAuthorizationServer"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="162"/>
+        <TopLine Value="164"/>
         <CursorPos X="38" Y="178"/>
         <UsageCount Value="32"/>
         <Loaded Value="True"/>
@@ -20,102 +17,76 @@
       <Unit1>
         <Filename Value="..\Utils\HashUtilz.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="HashUtilz"/>
         <UsageCount Value="25"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\Components\Indy10\Lib\System\IdStream.pas"/>
-        <UnitName Value="IdStream"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="17"/>
         <CursorPos X="3" Y="29"/>
         <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
       <Unit3>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-base\src\custapp.pp"/>
         <UnitName Value="CustApp"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="40"/>
         <CursorPos X="17" Y="51"/>
         <UsageCount Value="14"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\Xml\Xmlz.pas"/>
-        <UnitName Value="Xmlz"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="209"/>
         <CursorPos X="29" Y="225"/>
         <UsageCount Value="14"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\Xml\xmlio.pas"/>
-        <UnitName Value="xmlio"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="313"/>
         <CursorPos X="10" Y="314"/>
         <UsageCount Value="13"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\Components\Indy10\Lib\Protocols\IdHTTPServer.pas"/>
-        <UnitName Value="IdHTTPServer"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="12"/>
         <CursorPos X="14" Y="48"/>
         <UsageCount Value="13"/>
       </Unit6>
       <Unit7>
         <Filename Value="wsdlAuthorizationServerIni.xml"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
         <CursorPos X="19" Y="2"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit7>
       <Unit8>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\objpash.inc"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="180"/>
         <CursorPos X="23" Y="192"/>
         <UsageCount Value="11"/>
       </Unit8>
       <Unit9>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-db\src\sqldb\sqldb.pp"/>
-        <UnitName Value="sqldb"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="163"/>
         <CursorPos X="3" Y="100"/>
         <UsageCount Value="11"/>
       </Unit9>
       <Unit10>
         <Filename Value="C:\lazarus\lcl\include\winapi.inc"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="330"/>
-        <CursorPos X="1" Y="324"/>
+        <CursorPos Y="324"/>
         <UsageCount Value="10"/>
       </Unit10>
       <Unit11>
         <Filename Value="..\Utils\forminifilez.pas"/>
         <UnitName Value="FormIniFilez"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="1" Y="1"/>
         <UsageCount Value="11"/>
       </Unit11>
       <Unit12>
         <Filename Value="..\Components\Indy10\Lib\Core\IdSocketHandle.pas"/>
-        <UnitName Value="IdSocketHandle"/>
-        <EditorIndex Value="1"/>
-        <WindowIndex Value="0"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="374"/>
-        <CursorPos X="1" Y="385"/>
+        <CursorPos Y="385"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit12>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="0"/>
-    </General>
     <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -127,7 +98,6 @@
       </Position2>
       <Position3>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
       </Position3>
       <Position4>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -143,7 +113,7 @@
       </Position6>
       <Position7>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="354" Column="1" TopLine="343"/>
+        <Caret Line="354" TopLine="343"/>
       </Position7>
       <Position8>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -159,35 +129,35 @@
       </Position10>
       <Position11>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="308" Column="1" TopLine="300"/>
+        <Caret Line="308" TopLine="300"/>
       </Position11>
       <Position12>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="154" Column="1" TopLine="146"/>
+        <Caret Line="154" TopLine="146"/>
       </Position12>
       <Position13>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="348" Column="1" TopLine="301"/>
+        <Caret Line="348" TopLine="301"/>
       </Position13>
       <Position14>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="308" Column="1" TopLine="301"/>
+        <Caret Line="308" TopLine="301"/>
       </Position14>
       <Position15>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="154" Column="1" TopLine="143"/>
+        <Caret Line="154" TopLine="143"/>
       </Position15>
       <Position16>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="348" Column="1" TopLine="337"/>
+        <Caret Line="348" TopLine="337"/>
       </Position16>
       <Position17>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="308" Column="1" TopLine="297"/>
+        <Caret Line="308" TopLine="297"/>
       </Position17>
       <Position18>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="348" Column="1" TopLine="337"/>
+        <Caret Line="348" TopLine="337"/>
       </Position18>
       <Position19>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -195,11 +165,11 @@
       </Position19>
       <Position20>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="308" Column="1" TopLine="297"/>
+        <Caret Line="308" TopLine="297"/>
       </Position20>
       <Position21>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="348" Column="1" TopLine="337"/>
+        <Caret Line="348" TopLine="337"/>
       </Position21>
       <Position22>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -211,7 +181,7 @@
       </Position23>
       <Position24>
         <Filename Value="wsAuthorizationServer.lpr"/>
-        <Caret Line="185" Column="1" TopLine="174"/>
+        <Caret Line="185" TopLine="174"/>
       </Position24>
       <Position25>
         <Filename Value="wsAuthorizationServer.lpr"/>
@@ -234,24 +204,27 @@
         <Caret Line="397" Column="49" TopLine="381"/>
       </Position29>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
   <Debugging>
-    <BreakPoints Count="2">
-      <Item1>
+    <BreakPoints>
+      <Item>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="wsdlAuthorizationServer.lpr"/>
         <Line Value="83"/>
-      </Item1>
-      <Item2>
+      </Item>
+      <Item>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="wsdlAuthorizationServer.lpr"/>
         <Line Value="356"/>
-      </Item2>
+      </Item>
     </BreakPoints>
   </Debugging>
-  <EditorMacros Count="0"/>
 </CONFIG>

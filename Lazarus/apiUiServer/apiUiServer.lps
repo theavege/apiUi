@@ -2,88 +2,93 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
-    <BuildModes Active="Default"/>
-    <Units Count="34">
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="35">
       <Unit0>
         <Filename Value="apiUiServer.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="520"/>
-        <CursorPos Y="535"/>
+        <TopLine Value="21"/>
+        <CursorPos X="17" Y="28"/>
         <UsageCount Value="218"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="..\wsdlStub\wsdlcontrolz.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="1"/>
-        <TopLine Value="231"/>
-        <CursorPos X="6" Y="242"/>
-        <UsageCount Value="206"/>
-      </Unit1>
-      <Unit2>
-        <Filename Value="..\Components\Indy10\Lib\System\IdStack.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="389"/>
-        <CursorPos X="4" Y="400"/>
-        <UsageCount Value="200"/>
-      </Unit2>
-      <Unit3>
         <Filename Value="..\Xml\Xmlz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="4895"/>
         <CursorPos X="3" Y="407"/>
         <UsageCount Value="200"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="..\TacoInterface\tacoInterface.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UsageCount Value="324"/>
-      </Unit4>
-      <Unit5>
+      </Unit1>
+      <Unit2>
         <Filename Value="..\Html\htmlxmlutilz.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="htmlXmlUtilz"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="14"/>
         <UsageCount Value="320"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="C:\lazarus\lcl\translations.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Translations"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="1"/>
-        <UsageCount Value="316"/>
-      </Unit6>
-      <Unit7>
+      </Unit2>
+      <Unit3>
         <Filename Value="..\ProgressStatus\progressinterface.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ProgressInterface"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="14"/>
         <UsageCount Value="212"/>
-      </Unit7>
-      <Unit8>
+      </Unit3>
+      <Unit4>
         <Filename Value="..\wsdlStub\WsdlProjectz.pas"/>
-        <IsVisibleTab Value="True"/>
+        <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="7826"/>
+        <TopLine Value="7836"/>
         <CursorPos Y="7849"/>
         <UsageCount Value="208"/>
         <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\wsdlStub\wsdlcontrolz.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="231"/>
+        <CursorPos X="6" Y="242"/>
+        <UsageCount Value="206"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\Components\Indy10\Lib\System\IdStack.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="389"/>
+        <CursorPos X="4" Y="400"/>
+        <UsageCount Value="200"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\TacoInterface\tacoInterface.pas"/>
+        <UsageCount Value="324"/>
       </Unit8>
       <Unit9>
+        <Filename Value="C:\lazarus\lcl\translations.pas"/>
+        <UnitName Value="Translations"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="316"/>
+      </Unit9>
+      <Unit10>
         <Filename Value="..\Xml\xmlio.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="111"/>
         <CursorPos X="11" Y="125"/>
         <UsageCount Value="454"/>
-      </Unit9>
-      <Unit10>
+      </Unit10>
+      <Unit11>
         <Filename Value="..\wsdlStub\WsdlStubMainUnit.pas"/>
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
@@ -92,114 +97,115 @@
         <TopLine Value="11006"/>
         <CursorPos X="27" Y="11022"/>
         <UsageCount Value="52"/>
-      </Unit10>
-      <Unit11>
+      </Unit11>
+      <Unit12>
         <Filename Value="..\Xml\Xsdz.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="1056"/>
+        <TopLine Value="1226"/>
         <CursorPos X="11" Y="1236"/>
         <UsageCount Value="196"/>
         <Loaded Value="True"/>
-      </Unit11>
-      <Unit12>
+      </Unit12>
+      <Unit13>
         <Filename Value="..\Xml\Logz.pas"/>
         <EditorIndex Value="1"/>
         <TopLine Value="1331"/>
         <CursorPos X="38" Y="1348"/>
         <UsageCount Value="204"/>
         <Loaded Value="True"/>
-      </Unit12>
-      <Unit13>
+      </Unit13>
+      <Unit14>
         <Filename Value="..\Xml\Wsdlz.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="7" Y="17"/>
         <UsageCount Value="41"/>
-      </Unit13>
-      <Unit14>
+      </Unit14>
+      <Unit15>
         <Filename Value="..\wsdlStub\httpmultipart.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="64"/>
         <CursorPos X="81" Y="85"/>
         <UsageCount Value="7"/>
-      </Unit14>
-      <Unit15>
+      </Unit15>
+      <Unit16>
         <Filename Value="..\ProgressStatus\progressunit.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="14"/>
         <UsageCount Value="7"/>
-      </Unit15>
-      <Unit16>
-        <Filename Value="..\StompInterface\StompInterface.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="10"/>
-        <CursorPos X="14" Y="36"/>
-        <UsageCount Value="25"/>
       </Unit16>
       <Unit17>
+        <Filename Value="..\StompInterface\StompInterface.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="109"/>
+        <CursorPos X="12" Y="115"/>
+        <UsageCount Value="25"/>
+      </Unit17>
+      <Unit18>
         <Filename Value="..\StompInterface\Stomp\StompClient.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="181"/>
         <CursorPos Y="236"/>
         <UsageCount Value="7"/>
-      </Unit17>
-      <Unit18>
+      </Unit18>
+      <Unit19>
         <Filename Value="C:\lazarus\fpc\3.2.0\source\packages\fcl-base\src\custapp.pp"/>
         <UnitName Value="CustApp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="55"/>
         <CursorPos X="15" Y="67"/>
         <UsageCount Value="10"/>
-      </Unit18>
-      <Unit19>
+      </Unit19>
+      <Unit20>
         <Filename Value="..\wsdlStub\optionsunit.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="51"/>
         <CursorPos Y="85"/>
         <UsageCount Value="31"/>
-      </Unit19>
-      <Unit20>
+      </Unit20>
+      <Unit21>
         <Filename Value="..\wsdlStub\xmlreportz.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="46"/>
         <UsageCount Value="7"/>
-      </Unit20>
-      <Unit21>
+      </Unit21>
+      <Unit22>
         <Filename Value="..\Xpress\Bind.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos X="2" Y="126"/>
         <UsageCount Value="12"/>
-      </Unit21>
-      <Unit22>
+      </Unit22>
+      <Unit23>
         <Filename Value="..\Xpress\Express.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="521"/>
         <CursorPos X="3" Y="524"/>
         <UsageCount Value="5"/>
-      </Unit22>
-      <Unit23>
+      </Unit23>
+      <Unit24>
         <Filename Value="..\Xml\yaml\YAMLSCANNER.PAS"/>
         <UnitName Value="yamlScanner"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="38"/>
         <CursorPos Y="52"/>
         <UsageCount Value="10"/>
-      </Unit23>
-      <Unit24>
+      </Unit24>
+      <Unit25>
         <Filename Value="..\Components\Indy10\Lib\Protocols\IdNNTP.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="334"/>
         <CursorPos X="3" Y="347"/>
         <UsageCount Value="10"/>
-      </Unit24>
-      <Unit25>
+      </Unit25>
+      <Unit26>
         <Filename Value="..\Xpress\ParserClasses.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24" Y="105"/>
         <UsageCount Value="10"/>
-      </Unit25>
-      <Unit26>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\wsdlStub\EditOperationScriptUnit.pas"/>
         <ComponentName Value="EditOperationScriptForm"/>
         <HasResources Value="True"/>
@@ -208,50 +214,50 @@
         <TopLine Value="32"/>
         <CursorPos X="3" Y="46"/>
         <UsageCount Value="12"/>
-      </Unit26>
-      <Unit27>
+      </Unit27>
+      <Unit28>
         <Filename Value="..\Xml\xmlxsdparser.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="800"/>
         <CursorPos X="26" Y="811"/>
         <UsageCount Value="9"/>
-      </Unit27>
-      <Unit28>
+      </Unit28>
+      <Unit29>
         <Filename Value="..\Components\Indy10\Lib\Protocols\IdDateTimeStamp.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="14" Y="43"/>
         <UsageCount Value="9"/>
-      </Unit28>
-      <Unit29>
-        <Filename Value="..\Components\Indy10\Lib\Core\IdCompilerDefines.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1223"/>
-        <CursorPos X="27" Y="1239"/>
-        <UsageCount Value="9"/>
       </Unit29>
       <Unit30>
-        <Filename Value="..\Components\Indy10\Lib\Protocols\IdCompilerDefines.inc"/>
+        <Filename Value="..\Components\Indy10\Lib\Core\IdCompilerDefines.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1223"/>
         <CursorPos X="27" Y="1239"/>
         <UsageCount Value="9"/>
       </Unit30>
       <Unit31>
+        <Filename Value="..\Components\Indy10\Lib\Protocols\IdCompilerDefines.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1223"/>
+        <CursorPos X="27" Y="1239"/>
+        <UsageCount Value="9"/>
+      </Unit31>
+      <Unit32>
         <Filename Value="..\Components\Indy10\Lib\System\IdGlobal.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7845"/>
         <CursorPos X="10" Y="7860"/>
         <UsageCount Value="9"/>
-      </Unit31>
-      <Unit32>
+      </Unit32>
+      <Unit33>
         <Filename Value="..\Xml\ShowLogDifferencesUnit.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1141"/>
         <CursorPos X="38" Y="1157"/>
         <UsageCount Value="9"/>
-      </Unit32>
-      <Unit33>
+      </Unit33>
+      <Unit34>
         <Filename Value="..\Xml\ShowA2BXmlUnit.pas"/>
         <ComponentName Value="ShowA2BXmlForm"/>
         <HasResources Value="True"/>
@@ -262,14 +268,14 @@
         <UsageCount Value="14"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit33>
+      </Unit34>
     </Units>
     <OtherDefines Count="3">
       <Define0 Value="ConsoleApp"/>
       <Define1 Value="UseCThreads"/>
       <Define2 Value="NoGUI"/>
     </OtherDefines>
-    <JumpHistory Count="24" HistoryIndex="23">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="apiUiServer.lpr"/>
         <Caret Line="609" TopLine="446"/>
@@ -364,10 +370,18 @@
         <Filename Value="..\Xml\Logz.pas"/>
         <Caret Line="1348" Column="38" TopLine="1331"/>
       </Position24>
+      <Position25>
+        <Filename Value="..\wsdlStub\WsdlProjectz.pas"/>
+        <Caret Line="7849" TopLine="7836"/>
+      </Position25>
+      <Position26>
+        <Filename Value="apiUiServer.lpr"/>
+        <Caret Line="28" Column="17" TopLine="21"/>
+      </Position26>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode="default"/>
+      <Modes ActiveMode="default"/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

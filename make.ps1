@@ -74,9 +74,10 @@ Function Build-Project {
     'Build projects:' | Out-Host
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
         "    build project $($_)" | Out-Host
-        If (& $VAR.Cmd --no-write-project --recursive $_) {
+        If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
             & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
-            Throw "Error!!!"
+            $exitCode = $LastExitCode
+            Throw $exitCode
         }
     }
     "Done!" | Out-Host

@@ -27,10 +27,9 @@
       <Unit2>
         <Filename Value="Source\RegExpr.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="3819"/>
-        <CursorPos X="5" Y="3820"/>
+        <CursorPos Y="3820"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -194,14 +193,15 @@
       <Unit32>
         <Filename Value="..\..\..\..\..\usr\lib64\lazarus\components\synedit\syneditsearch.pp"/>
         <UnitName Value="SynEditSearch"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="3"/>
-        <CursorPos X="53" Y="9"/>
+        <CursorPos Y="9"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit32>
     </Units>
-    <JumpHistory Count="27" HistoryIndex="26">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="..\Utils\forminifilez.pas"/>
         <Caret Line="18" Column="8"/>
@@ -310,6 +310,14 @@
         <Filename Value="..\..\..\..\..\usr\lib64\lazarus\components\synedit\syneditsearch.pp"/>
         <Caret Line="9" Column="53"/>
       </Position27>
+      <Position28>
+        <Filename Value="Source\RegExpr.pas"/>
+        <Caret Line="3820" TopLine="3819"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\..\..\..\usr\lib64\lazarus\components\synedit\syneditsearch.pp"/>
+        <Caret Line="9" Column="53" TopLine="37"/>
+      </Position29>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

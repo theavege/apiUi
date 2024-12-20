@@ -35,7 +35,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\components\Indy10\Lib\Protocols;..\components\Indy10\Lib\System;..\components\Indy10\Lib\Core;IpmScanner;json;yaml;..\Html;..\wsdlStub"/>
+            <OtherUnitFiles Value="..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;IpmScanner;json;yaml;..\Html;..\wsdlStub"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -121,18 +121,27 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="6">
       <Item1>
-        <PackageName Value="TurboPowerIPro"/>
+        <PackageName Value="fpc_markdown"/>
       </Item1>
       <Item2>
-        <PackageName Value="virtualtreeview_package"/>
+        <PackageName Value="FrameViewer09"/>
       </Item2>
       <Item3>
-        <PackageName Value="LCL"/>
+        <PackageName Value="indylaz"/>
       </Item3>
+      <Item4>
+        <PackageName Value="TurboPowerIPro"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="virtualtreeview_package"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
     </RequiredPackages>
-    <Units Count="11">
+    <Units Count="8">
       <Unit0>
         <Filename Value="xmlExplorer.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -166,34 +175,21 @@
         <ResourceBaseClass Value="Form"/>
       </Unit4>
       <Unit5>
-        <Filename Value="stdvcl.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="StdVCL"/>
-      </Unit5>
-      <Unit6>
         <Filename Value="cbAbout.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="AboutBox"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
-        <IsPartOfProject Value="True"/>
-      </Unit7>
-      <Unit8>
+      </Unit5>
+      <Unit6>
         <Filename Value="..\Utils\versionsupport.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="VersionSupport"/>
-      </Unit8>
-      <Unit9>
-        <Filename Value="..\Components\Indy10\Lib\Protocols\IdHTTP.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit9>
-      <Unit10>
+      </Unit6>
+      <Unit7>
         <Filename Value="..\Html\htmlxmlutilz.pas"/>
         <IsPartOfProject Value="True"/>
-      </Unit10>
+      </Unit7>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

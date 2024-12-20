@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="8">
+    <Units Count="9">
       <Unit0>
         <Filename Value="stompTest.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -51,17 +51,25 @@
       </Unit6>
       <Unit7>
         <Filename Value="..\StompClient.pas"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="26"/>
         <CursorPos X="14" Y="32"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="..\StompTypes.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="174"/>
+        <CursorPos X="31" Y="181"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit8>
     </Units>
     <JumpHistory Count="1">
       <Position1>
         <Filename Value="..\StompClient.pas"/>
-        <Caret Line="32" Column="14" TopLine="24"/>
+        <Caret Line="32" Column="14" TopLine="26"/>
       </Position1>
     </JumpHistory>
     <RunParams>

@@ -7,8 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms , nsSqlMainUnit , QueryScanner , lazrichedit , virtualtreeview_package ,
-  AboutUnit
+  Forms, lazrichview , nsSqlMainUnit , QueryScanner , virtualtreeview_package ,
+  AboutUnit, jsnAnalyser, yamlAnalyser, indylaz, FrameViewer09
   { you can add units after this };
 
 {$R *.res}

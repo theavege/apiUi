@@ -4,11 +4,11 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="78">
+    <Units Count="81">
       <Unit0>
         <Filename Value="apiUi.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="7"/>
         <CursorPos Y="38"/>
         <UsageCount Value="200"/>
@@ -30,75 +30,51 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <TopLine Value="13498"/>
-        <CursorPos X="40" Y="13511"/>
+        <CursorPos X="14" Y="13511"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="..\Components\Indy10\Lib\Core\IdExceptionCore.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="126"/>
-        <CursorPos X="6" Y="112"/>
-        <UsageCount Value="200"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="..\Components\Indy10\Lib\System\IdStack.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="854"/>
-        <CursorPos Y="868"/>
-        <UsageCount Value="200"/>
-      </Unit4>
-      <Unit5>
         <Filename Value="..\Xml\snapshotz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="5" Y="41"/>
         <UsageCount Value="200"/>
-      </Unit5>
-      <Unit6>
+      </Unit3>
+      <Unit4>
         <Filename Value="..\Xml\exceptionutils.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="exceptionUtils"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="13"/>
         <UsageCount Value="220"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="..\Components\Indy10\Lib\Protocols\IdHTTP.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="629"/>
-        <CursorPos X="3" Y="637"/>
-        <UsageCount Value="200"/>
-      </Unit7>
-      <Unit8>
+      </Unit4>
+      <Unit5>
         <Filename Value="..\Html\htmlxmlutilz.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="htmlXmlUtilz"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="13"/>
         <UsageCount Value="200"/>
-      </Unit8>
-      <Unit9>
+      </Unit5>
+      <Unit6>
         <Filename Value="..\wsdlStub\htmlreportz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="17" Y="36"/>
         <UsageCount Value="200"/>
-      </Unit9>
-      <Unit10>
+      </Unit6>
+      <Unit7>
         <Filename Value="..\wsdlStub\junitunit.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="6" Y="13"/>
         <UsageCount Value="200"/>
-      </Unit10>
-      <Unit11>
+      </Unit7>
+      <Unit8>
         <Filename Value="..\Xml\stringlistlistunit.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="StringListListUnit"/>
@@ -106,8 +82,8 @@
         <TopLine Value="27"/>
         <CursorPos X="3" Y="28"/>
         <UsageCount Value="200"/>
-      </Unit11>
-      <Unit12>
+      </Unit8>
+      <Unit9>
         <Filename Value="..\ProgressStatus\progressinterface.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ProgressInterface"/>
@@ -115,8 +91,8 @@
         <TopLine Value="11"/>
         <CursorPos X="3" Y="27"/>
         <UsageCount Value="372"/>
-      </Unit12>
-      <Unit13>
+      </Unit9>
+      <Unit10>
         <Filename Value="..\wsdlStub\WsdlProjectz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
@@ -124,8 +100,8 @@
         <CursorPos X="50" Y="9510"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
-      </Unit13>
-      <Unit14>
+      </Unit10>
+      <Unit11>
         <Filename Value="..\wsdlStub\editcontextsunit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditContextsForm"/>
@@ -138,8 +114,8 @@
         <UsageCount Value="255"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit14>
-      <Unit15>
+      </Unit11>
+      <Unit12>
         <Filename Value="..\wsdlStub\wsdlListUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="wsdlListForm"/>
@@ -149,8 +125,8 @@
         <TopLine Value="154"/>
         <CursorPos X="28" Y="166"/>
         <UsageCount Value="241"/>
-      </Unit15>
-      <Unit16>
+      </Unit12>
+      <Unit13>
         <Filename Value="..\wsdlStub\IpmGridUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="IpmGridForm"/>
@@ -160,16 +136,16 @@
         <TopLine Value="1037"/>
         <CursorPos X="53" Y="1047"/>
         <UsageCount Value="241"/>
-      </Unit16>
-      <Unit17>
+      </Unit13>
+      <Unit14>
         <Filename Value="..\wsdlStub\Listenerz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="202"/>
         <CursorPos Y="225"/>
         <UsageCount Value="241"/>
-      </Unit17>
-      <Unit18>
+      </Unit14>
+      <Unit15>
         <Filename Value="..\wsdlStub\ChooseStringUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ChooseStringForm"/>
@@ -179,8 +155,8 @@
         <TopLine Value="50"/>
         <CursorPos X="3" Y="37"/>
         <UsageCount Value="241"/>
-      </Unit18>
-      <Unit19>
+      </Unit15>
+      <Unit16>
         <Filename Value="..\wsdlStub\AboutUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="AboutBox"/>
@@ -190,8 +166,8 @@
         <TopLine Value="22"/>
         <CursorPos X="5" Y="42"/>
         <UsageCount Value="241"/>
-      </Unit19>
-      <Unit20>
+      </Unit16>
+      <Unit17>
         <Filename Value="..\wsdlStub\AddFavouritesUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="AddFavouritesForm"/>
@@ -201,8 +177,8 @@
         <TopLine Value="61"/>
         <CursorPos Y="66"/>
         <UsageCount Value="241"/>
-      </Unit20>
-      <Unit21>
+      </Unit17>
+      <Unit18>
         <Filename Value="..\wsdlStub\ApplyToUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -211,8 +187,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit21>
-      <Unit22>
+      </Unit18>
+      <Unit19>
         <Filename Value="..\wsdlStub\DelayTimeUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DelayTimeForm"/>
@@ -221,8 +197,8 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="105" Y="11"/>
         <UsageCount Value="241"/>
-      </Unit22>
-      <Unit23>
+      </Unit19>
+      <Unit20>
         <Filename Value="..\wsdlStub\DisclaimerUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DisclaimerForm"/>
@@ -232,8 +208,8 @@
         <TopLine Value="20"/>
         <CursorPos X="3" Y="33"/>
         <UsageCount Value="241"/>
-      </Unit23>
-      <Unit24>
+      </Unit20>
+      <Unit21>
         <Filename Value="..\wsdlStub\EditCheckerUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -242,8 +218,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit24>
-      <Unit25>
+      </Unit21>
+      <Unit22>
         <Filename Value="..\wsdlStub\EditListValuesUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditListValuesForm"/>
@@ -253,8 +229,8 @@
         <TopLine Value="63"/>
         <CursorPos Y="63"/>
         <UsageCount Value="241"/>
-      </Unit25>
-      <Unit26>
+      </Unit22>
+      <Unit23>
         <Filename Value="..\wsdlStub\EditOperationScriptUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditOperationScriptForm"/>
@@ -264,8 +240,8 @@
         <TopLine Value="106"/>
         <CursorPos X="3" Y="122"/>
         <UsageCount Value="241"/>
-      </Unit26>
-      <Unit27>
+      </Unit23>
+      <Unit24>
         <Filename Value="..\wsdlStub\EditPartExpUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -274,8 +250,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit27>
-      <Unit28>
+      </Unit24>
+      <Unit25>
         <Filename Value="..\wsdlStub\EditRegExpUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditRegExpForm"/>
@@ -285,8 +261,8 @@
         <TopLine Value="77"/>
         <CursorPos X="8" Y="88"/>
         <UsageCount Value="241"/>
-      </Unit28>
-      <Unit29>
+      </Unit25>
+      <Unit26>
         <Filename Value="..\wsdlStub\EditStamperUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -295,8 +271,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit29>
-      <Unit30>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\wsdlStub\EditTextUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditTexttForm"/>
@@ -306,8 +282,8 @@
         <TopLine Value="168"/>
         <CursorPos X="10" Y="178"/>
         <UsageCount Value="241"/>
-      </Unit30>
-      <Unit31>
+      </Unit27>
+      <Unit28>
         <Filename Value="..\wsdlStub\EditValueUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EditValueForm"/>
@@ -315,16 +291,16 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="241"/>
-      </Unit31>
-      <Unit32>
+      </Unit28>
+      <Unit29>
         <Filename Value="..\wsdlStub\ExceptionLogz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="51"/>
         <CursorPos X="101" Y="61"/>
         <UsageCount Value="241"/>
-      </Unit32>
-      <Unit33>
+      </Unit29>
+      <Unit30>
         <Filename Value="..\wsdlStub\LogFilterUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LogFilterForm"/>
@@ -334,17 +310,8 @@
         <TopLine Value="485"/>
         <CursorPos X="3" Y="489"/>
         <UsageCount Value="241"/>
-      </Unit33>
-      <Unit34>
-        <Filename Value="..\wsdlStub\mqBrowseUnit.pas"/>
-        <IsPartOfProject Value="True"/>
-        <HasResources Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="56"/>
-        <CursorPos X="12" Y="72"/>
-        <UsageCount Value="241"/>
-      </Unit34>
-      <Unit35>
+      </Unit30>
+      <Unit31>
         <Filename Value="..\wsdlStub\OpenWsdlUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpenWsdlForm"/>
@@ -354,8 +321,8 @@
         <TopLine Value="107"/>
         <CursorPos X="5" Y="121"/>
         <UsageCount Value="241"/>
-      </Unit35>
-      <Unit36>
+      </Unit31>
+      <Unit32>
         <Filename Value="..\wsdlStub\QueryNewElementUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="QueryNewElementForm"/>
@@ -364,8 +331,8 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="6"/>
         <UsageCount Value="241"/>
-      </Unit36>
-      <Unit37>
+      </Unit32>
+      <Unit33>
         <Filename Value="..\wsdlStub\SaveProjectAsUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -374,8 +341,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit37>
-      <Unit38>
+      </Unit33>
+      <Unit34>
         <Filename Value="..\wsdlStub\SelectDbNameUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SelectDbNameForm"/>
@@ -385,8 +352,8 @@
         <TopLine Value="112"/>
         <CursorPos X="3" Y="23"/>
         <UsageCount Value="241"/>
-      </Unit38>
-      <Unit39>
+      </Unit34>
+      <Unit35>
         <Filename Value="..\wsdlStub\SelectElementsUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SelectElementsForm"/>
@@ -396,8 +363,8 @@
         <TopLine Value="171"/>
         <CursorPos Y="174"/>
         <UsageCount Value="241"/>
-      </Unit39>
-      <Unit40>
+      </Unit35>
+      <Unit36>
         <Filename Value="..\wsdlStub\SelectItemUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SelectItemForm"/>
@@ -406,8 +373,8 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="12"/>
         <UsageCount Value="241"/>
-      </Unit40>
-      <Unit41>
+      </Unit36>
+      <Unit37>
         <Filename Value="..\wsdlStub\SelectProjectFolderUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -416,8 +383,8 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit41>
-      <Unit42>
+      </Unit37>
+      <Unit38>
         <Filename Value="..\wsdlStub\SelectXmlElement.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SelectXmlElementForm"/>
@@ -427,16 +394,16 @@
         <TopLine Value="301"/>
         <CursorPos X="35" Y="309"/>
         <UsageCount Value="241"/>
-      </Unit42>
-      <Unit43>
+      </Unit38>
+      <Unit39>
         <Filename Value="..\wsdlStub\smtpInterface.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="135"/>
         <CursorPos X="34" Y="145"/>
         <UsageCount Value="241"/>
-      </Unit43>
-      <Unit44>
+      </Unit39>
+      <Unit40>
         <Filename Value="..\wsdlStub\StressTestUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -445,16 +412,16 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit44>
-      <Unit45>
+      </Unit40>
+      <Unit41>
         <Filename Value="..\wsdlStub\testerunit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="21"/>
         <UsageCount Value="241"/>
-      </Unit45>
-      <Unit46>
+      </Unit41>
+      <Unit42>
         <Filename Value="..\wsdlStub\wsaConfigUnit.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
@@ -463,62 +430,90 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="241"/>
-      </Unit46>
-      <Unit47>
+      </Unit42>
+      <Unit43>
         <Filename Value="..\wsdlStub\httpmultipart.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="298"/>
-      </Unit47>
-      <Unit48>
+      </Unit43>
+      <Unit44>
         <Filename Value="..\wsdlStub\apiuiconsts.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="15"/>
         <CursorPos X="63" Y="24"/>
         <UsageCount Value="372"/>
-      </Unit48>
-      <Unit49>
+      </Unit44>
+      <Unit45>
         <Filename Value="..\wsdlStub\optionsunit.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="12"/>
         <TopLine Value="53"/>
         <CursorPos X="3" Y="82"/>
         <UsageCount Value="209"/>
         <Loaded Value="True"/>
-      </Unit49>
-      <Unit50>
+      </Unit45>
+      <Unit46>
         <Filename Value="..\wsdlStub\xmlreportz.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="6" Y="15"/>
         <UsageCount Value="201"/>
-      </Unit50>
-      <Unit51>
+      </Unit46>
+      <Unit47>
         <Filename Value="..\wiremock\wiremockmapping.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
         <TopLine Value="265"/>
         <CursorPos Y="276"/>
         <UsageCount Value="250"/>
         <Loaded Value="True"/>
-      </Unit51>
-      <Unit52>
+      </Unit47>
+      <Unit48>
         <Filename Value="..\wsdlStub\statemachineunit.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="14"/>
         <UsageCount Value="230"/>
-      </Unit52>
-      <Unit53>
+      </Unit48>
+      <Unit49>
         <Filename Value="..\pegasimul8r\pegasimul8rmapping.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="650"/>
         <CursorPos X="22" Y="631"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="..\wsdlStub\mqBrowseUnit.pas"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="12" Y="72"/>
+        <UsageCount Value="241"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="..\Components\Indy10\Lib\Core\IdExceptionCore.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="126"/>
+        <CursorPos X="6" Y="112"/>
+        <UsageCount Value="200"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\Components\Indy10\Lib\System\IdStack.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="854"/>
+        <CursorPos Y="868"/>
+        <UsageCount Value="200"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\Components\Indy10\Lib\Protocols\IdHTTP.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="629"/>
+        <CursorPos X="3" Y="637"/>
+        <UsageCount Value="200"/>
       </Unit53>
       <Unit54>
         <Filename Value="..\Xml\Wsdlz.pas"/>
@@ -530,7 +525,7 @@
       </Unit54>
       <Unit55>
         <Filename Value="..\Xml\Xsdz.pas"/>
-        <EditorIndex Value="13"/>
+        <EditorIndex Value="15"/>
         <TopLine Value="442"/>
         <CursorPos X="3" Y="444"/>
         <UsageCount Value="100"/>
@@ -538,7 +533,7 @@
       </Unit55>
       <Unit56>
         <Filename Value="..\Xml\Xmlz.pas"/>
-        <EditorIndex Value="12"/>
+        <EditorIndex Value="14"/>
         <TopLine Value="1451"/>
         <CursorPos Y="1467"/>
         <UsageCount Value="221"/>
@@ -553,7 +548,7 @@
       </Unit57>
       <Unit58>
         <Filename Value="..\Xml\Logz.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="1424"/>
         <CursorPos Y="1473"/>
         <UsageCount Value="69"/>
@@ -561,14 +556,15 @@
       </Unit58>
       <Unit59>
         <Filename Value="..\Xml\xmlio.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="765"/>
-        <CursorPos Y="791"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="17"/>
+        <CursorPos X="5" Y="23"/>
         <UsageCount Value="162"/>
+        <Loaded Value="True"/>
       </Unit59>
       <Unit60>
         <Filename Value="..\Xml\xmlUtilz.pas"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="13"/>
         <TopLine Value="2136"/>
         <CursorPos Y="2168"/>
         <UsageCount Value="116"/>
@@ -679,7 +675,7 @@
       </Unit74>
       <Unit75>
         <Filename Value="..\Xml\IpmTypes.pas"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="9"/>
         <CursorPos X="23" Y="27"/>
         <UsageCount Value="14"/>
         <Loaded Value="True"/>
@@ -699,12 +695,40 @@
         <CursorPos X="3" Y="41"/>
         <UsageCount Value="10"/>
       </Unit77>
+      <Unit78>
+        <Filename Value="..\..\use\Indy10\Indy10\Protocols\IdURI.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="..\StompInterface\StompInterface.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="108"/>
+        <CursorPos X="6" Y="115"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit80>
     </Units>
     <OtherDefines Count="2">
       <Define0 Value="UseCThreads"/>
       <Define1 Value="TrialVersion"/>
     </OtherDefines>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="..\wsdlStub\WsdlProjectz.pas"/>
         <Caret Line="368" Column="23" TopLine="338"/>
@@ -817,6 +841,14 @@
         <Filename Value="..\wiremock\wiremockmapping.pas"/>
         <Caret Line="172" TopLine="156"/>
       </Position28>
+      <Position29>
+        <Filename Value="..\wiremock\wiremockmapping.pas"/>
+        <Caret Line="276" TopLine="265"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\Xml\xmlio.pas"/>
+        <Caret Line="23" Column="5" TopLine="17"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

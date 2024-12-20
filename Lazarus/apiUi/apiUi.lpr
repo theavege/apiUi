@@ -21,8 +21,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, FrameViewer09, tachartlazaruspkg, abbrevia, virtualtreeview_package,
-  IdExceptionCore, IdStack, IdHTTP, WsdlStubMainUnit, snapshotz, exceptionUtils,
+  Forms, IdURI, IdSync, FrameViewer09, tachartlazaruspkg, abbrevia,
+  virtualtreeview_package, WsdlStubMainUnit, snapshotz, exceptionUtils,
   htmlXmlUtilz, htmlreportz, WsdlProjectz, junitunit, StringListListUnit,
   ChooseStringUnit, EditContextsUnit, IpmGridUnit, Listenerz, wsdlListUnit,
   httpmultipart, apiuiconsts, wiremockmapping, statemachineunit,

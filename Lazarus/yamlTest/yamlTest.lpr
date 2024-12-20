@@ -21,7 +21,7 @@ uses
   cthreads ,
   {$ENDIF}{$ENDIF}
   Interfaces , // this includes the LCL widgetset
-  Forms, FrameViewer09 , virtualtreeview_package , yamlTestUnit
+  Forms, FrameViewer09 , virtualtreeview_package , yamlTestUnit, indylaz
   { you can add units after this };
 
 {$R *.res}

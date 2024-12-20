@@ -4,7 +4,7 @@ Uses
 {$IFDEF UNIX}{$IFDEF UseCThreads}
   CThreads,
 {$ENDIF}{$ENDIF}
-  DaemonApp , lazdaemonapp , wsAuthDaemonUnit , wsDaemonUnit , HashUtilz ;
+  DaemonApp , lazdaemonapp , HashUtilz ;
 
 begin
   Application.Initialize;

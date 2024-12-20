@@ -15,7 +15,7 @@ function priv_lazbuild
         source '/etc/os-release'
         case ${ID:?} in
             debian | ubuntu)
-                printf '\x1b[32mInstall Lazarus\x1b[0m\n' 1>&2
+                printf '\x1b[32mInstall Lazarus.\x1b[0m\n' 1>&2
                 sudo apt-get update
                 sudo apt-get install -y lazarus{-ide-qt5,}
                 ;;
@@ -23,9 +23,11 @@ function priv_lazbuild
     fi
     declare -r COMPONENTS='use/components.txt'
     if [[ -d "${COMPONENTS%%/*}" ]]; then
-        git submodule update --init --recursive --force --remote
+        #if [[ -f '.gitmodules' ]]; then
+        #    git submodule update --init --recursive --force --remote
+        #fi
         if [[ -f "${COMPONENTS}" ]]; then
-            printf '\x1b[32mDownwoad packages\x1b[0m\n' 1>&2
+            printf '\x1b[32mDownload packages:\x1b[0m\n' 1>&2
             while read -r; do
                 if [[ -n "${REPLY}" ]] &&
                     ! (lazbuild --verbose-pkgsearch "${REPLY}") &&
@@ -42,20 +44,28 @@ function priv_lazbuild
                     fi
             done < "${COMPONENTS}"
         fi
-        printf '\x1b[32mAdd dependencies\x1b[0m\n' 1>&2
+        printf '\x1b[32mAdd dependencies:\x1b[0m\n' 1>&2
         while read -r; do
             printf '\x1b[32m\tadd dependence %s\x1b[0m\n' "${REPLY}" 1>&2
             lazbuild --add-package "${REPLY}" ||
                 lazbuild --add-package-link "${REPLY}"
         done < <(find "${COMPONENTS%%/*}" -type 'f' -name '*.lpk' | sort)
     fi
-    printf '\x1b[32mBuild projects\x1b[0m\n' 1>&2
+    printf '\x1b[32mBuild projects:\x1b[0m\n' 1>&2
+    declare -i errors=0
     while read -r; do
-        printf '\x1b[32m\tbuild project %s\x1b[0m\n' "${REPLY}" 1>&2
-        if ! (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 "${REPLY}"); then
-            lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 "${REPLY}" 1>&2
+        declare -A VAR=(
+            [out]=$(mktemp)
+        )
+        if (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 --build-mode=release "${REPLY}" &> "${VAR[out]}"); then
+            printf '\x1b[32m\tbuild project %s\tdone.\x1b[0m\n' "${REPLY}" 1>&2
+        else
+            printf '\x1b[31m\tbuild project %s\tFAILD!!!\x1b[0m\n' "${REPLY}" 1>&2
+            cat "${VAR[out]}" 1>&2
+            ((errors+=1))
         fi
-    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(RegExpr|Xml|Xpress)' | sort)
+    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(backup|nsSql|Xml|wsdlStub|StompInterface)' | sort)
+    exit "${errors}"
 )
 
 function priv_main

@@ -7,7 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, virtualtreeview_package, xmlIo;
+  Forms, virtualtreeview_package, xmlIo, yamlAnalyser, jsnAnalyser, GZIPUtils,
+  indylaz;
 
 {$R *.res}
 

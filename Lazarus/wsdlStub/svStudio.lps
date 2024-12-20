@@ -2,8 +2,8 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="9"/>
-    <BuildModes Active="Default"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
     <Units Count="35">
       <Unit0>
         <Filename Value="svStudio.lpr"/>
@@ -17,7 +17,6 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="WsdlStubMainUnit"/>
         <TopLine Value="7"/>
         <CursorPos X="14" Y="29"/>
         <UsageCount Value="200"/>
@@ -33,7 +32,6 @@
       </Unit2>
       <Unit3>
         <Filename Value="WsdlProjectz.pas"/>
-        <UnitName Value="WsdlProjectz"/>
         <EditorIndex Value="1"/>
         <TopLine Value="6252"/>
         <CursorPos Y="6268"/>
@@ -42,7 +40,6 @@
       </Unit3>
       <Unit4>
         <Filename Value="..\Xml\xmlUtilz.pas"/>
-        <UnitName Value="xmlUtilz"/>
         <EditorIndex Value="6"/>
         <TopLine Value="94"/>
         <CursorPos X="13" Y="103"/>
@@ -117,10 +114,9 @@
       </Unit14>
       <Unit15>
         <Filename Value="..\Utils\igGlobals.pas"/>
-        <UnitName Value="igGlobals"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="1055"/>
-        <CursorPos X="3" Y="1059"/>
+        <TopLine Value="501"/>
+        <CursorPos Y="500"/>
         <UsageCount Value="16"/>
         <Loaded Value="True"/>
       </Unit15>
@@ -137,7 +133,6 @@
       </Unit17>
       <Unit18>
         <Filename Value="..\Xml\xmlio.pas"/>
-        <UnitName Value="xmlio"/>
         <EditorIndex Value="8"/>
         <CursorPos X="50" Y="5"/>
         <UsageCount Value="96"/>
@@ -189,7 +184,6 @@
         <ComponentName Value="ShowLogDifferencesForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ShowLogDifferencesUnit"/>
         <EditorIndex Value="3"/>
         <TopLine Value="1059"/>
         <CursorPos Y="1075"/>
@@ -199,10 +193,9 @@
       </Unit25>
       <Unit26>
         <Filename Value="..\Xml\A2BXmlz.pas"/>
-        <UnitName Value="A2BXmlz"/>
         <EditorIndex Value="5"/>
         <TopLine Value="324"/>
-        <CursorPos X="81" Y="343"/>
+        <CursorPos X="73" Y="343"/>
         <UsageCount Value="19"/>
         <Loaded Value="True"/>
       </Unit26>
@@ -217,7 +210,6 @@
         <ComponentName Value="ShowA2BXmlForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ShowA2BXmlUnit"/>
         <EditorIndex Value="4"/>
         <TopLine Value="786"/>
         <CursorPos Y="807"/>
@@ -256,12 +248,16 @@
       </Unit33>
       <Unit34>
         <Filename Value="..\Xml\logchartzunit.pas"/>
+        <ComponentName Value="logChartForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="logChartzUnit"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="24" Y="8"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit34>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
@@ -385,5 +381,9 @@
         <Filename Value="..\Xml\logchartzunit.pas"/>
       </Position30>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>
