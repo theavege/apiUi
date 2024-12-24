@@ -11,7 +11,7 @@ EOF
 
 function priv_lazbuild
 (
-    if ! (which lazbuild); then
+    if ! (command -v lazbuild); then
         source '/etc/os-release'
         case ${ID:?} in
             debian | ubuntu)
@@ -21,56 +21,56 @@ function priv_lazbuild
                 ;;
         esac
     fi
-    declare -r COMPONENTS='use/components.txt'
-    if [[ -d "${COMPONENTS%%/*}" ]]; then
-        #if [[ -f '.gitmodules' ]]; then
-        #    git submodule update --init --recursive --force --remote
-        #fi
-        if [[ -f "${COMPONENTS}" ]]; then
-            printf '\x1b[32mDownload packages:\x1b[0m\n' 1>&2
+    declare -rA VAR=(
+        [src]='Lazarus'
+        [use]='use'
+        [pkg]='use/components.txt'
+    )
+    if [[ -d "${VAR[use]}" ]]; then
+        if [[ -f '.gitmodules' ]]; then
+            git submodule update --init --recursive --force --remote
+        fi
+        if [[ -f "${VAR[pkg]}" ]]; then
             while read -r; do
                 if [[ -n "${REPLY}" ]] &&
                     ! (lazbuild --verbose-pkgsearch "${REPLY}") &&
                     ! (lazbuild --add-package "${REPLY}") &&
-                    ! [[ -d "${COMPONENTS%%/*}/${REPLY}" ]]; then
-                        printf '\x1b[32m\tdownwoad package %s\x1b[0m\n' "${REPLY}" 1>&2
-                        declare -A VAR=(
+                    ! [[ -d "${VAR[use]}/${REPLY}" ]]; then
+                        declare -A TMP=(
                             [url]="https://packages.lazarus-ide.org/${REPLY}.zip"
                             [out]=$(mktemp)
                         )
-                        wget --output-document "${VAR[out]}" "${VAR[url]}" >/dev/null
-                        unzip -o "${VAR[out]}" -d "${COMPONENTS%%/*}/${REPLY}"
-                        rm --verbose "${VAR[out]}"
+                        wget --quiet --output-document "${TMP[out]}" "${TMP[url]}" >/dev/null
+                        unzip -o "${TMP[out]}" -d "${VAR[use]}/${REPLY}"
+                        rm --verbose "${TMP[out]}"
+                        printf '\x1b[32m\tdownload package %s\x1b[0m\n' "${REPLY}" 1>&2
                     fi
-            done < "${COMPONENTS}"
+            done < "${VAR[pkg]}"
         fi
-        printf '\x1b[32mAdd dependencies:\x1b[0m\n' 1>&2
-        while read -r; do
-            printf '\x1b[32m\tadd dependence %s\x1b[0m\n' "${REPLY}" 1>&2
-            lazbuild --add-package "${REPLY}" ||
-                lazbuild --add-package-link "${REPLY}"
-        done < <(find "${COMPONENTS%%/*}" -type 'f' -name '*.lpk' | sort)
+        find "${VAR[use]}" -type 'f' -name '*.lpk' -print -exec \
+            lazbuild --add-package-link {} +
     fi
-    printf '\x1b[32mBuild projects:\x1b[0m\n' 1>&2
     declare -i errors=0
     while read -r; do
-        declare -A VAR=(
+        declare -A TMP=(
             [out]=$(mktemp)
         )
-        if (lazbuild --no-write-project --recursive --no-write-project --widgetset=qt5 --build-mode=release "${REPLY}" > "${VAR[out]}"); then
-            printf '\x1b[32m\tbuild project %s\tdone.\x1b[0m\n' "${REPLY}" 1>&2
+        if (lazbuild --build-all --recursive --no-write-project --build-mode='release' --widgetset='qt5' "${REPLY}" > "${VAR[out]}"); then
+            printf '\x1b[32m\t[%s]\tbuild project\t%s\x1b[0m\t' "${?}" "${REPLY}"
+            grep --color='always' 'Linking' "${TMP[out]}"
         else
-            printf '\x1b[31m\tbuild project %s\tFAILD!!!\x1b[0m\n' "${REPLY}" 1>&2
-            cat "${VAR[out]}" 1>&2
+            printf '\x1b[31m\t[%s]\tbuild project\t%s\x1b[0m\n' "${?}" "${REPLY}"
+            grep --color='always' --extended-regexp '(Error|Fatal):' "${TMP[out]}"
             ((errors+=1))
-        fi
-    done < <(find 'Lazarus' -type 'f' -name '*.lpi' | grep -vE '(backup|nsSql|RegExpr|Xml|wsdlStub|StompInterface)' | sort)
+        fi 1>&2
+        rm --verbose "${TMP[out]}"
+    done < <(find "${VAR[src]}" -type 'f' -name '*.lpi' | grep -vE '(backup|nsSql|RegExpr|Xml|wsdlStub|StompInterface)' | sort)
     exit "${errors}"
 )
 
 function priv_main
 (
-    set -euo pipefail
+    set -xeuo pipefail
     if ((${#})); then
         case ${1} in
             build) priv_lazbuild ;;
