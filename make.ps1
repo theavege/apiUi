@@ -80,11 +80,11 @@ Function Build-Project {
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $VAR.Src |
         Where-Object {
             $_ -like 'backup' &&
-               -like 'nsSql' &&
-               -like 'RegExpr' &&
-               -like 'Xml' &&
-               -like 'wsdlStub' &&
-               -like 'StompInterface'
+            $_ -like 'nsSql' &&
+            $_ -like 'RegExpr' &&
+            $_ -like 'Xml' &&
+            $_ -like 'wsdlStub' &&
+            $_ -like 'StompInterface'
         } |
         ForEach-Object {
             $Result = @()
