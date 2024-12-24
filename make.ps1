@@ -78,6 +78,7 @@ Function Build-Project {
             } { $Result | Out-Host }
     }
     Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $VAR.Src |
+        Where-Object {$_ -Match '*(backup|nsSql|RegExpr|Xml|wsdlStub|StompInterface)*'} |
         ForEach-Object {
             $Result = @()
             $exitCode = 0
