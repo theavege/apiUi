@@ -2,3 +2,4 @@ Indy10
 HtmlViewer
 VirtualTreeViewV5
 Abbrevia
+LazRichView
