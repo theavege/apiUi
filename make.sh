@@ -15,9 +15,9 @@ function priv_lazbuild
         source '/etc/os-release'
         case ${ID:?} in
             debian | ubuntu)
-                printf '\x1b[32mInstall Lazarus.\x1b[0m\n' 1>&2
                 sudo apt-get update
                 sudo apt-get install -y lazarus{-ide-qt5,}
+                printf '\x1b[32mInstall Lazarus.\x1b[0m\n' 1>&2
                 ;;
         esac
     fi
@@ -55,7 +55,7 @@ function priv_lazbuild
         declare -A TMP=(
             [out]=$(mktemp)
         )
-        if (lazbuild --build-all --recursive --no-write-project --build-mode='release' --widgetset='qt5' "${REPLY}" > "${VAR[out]}"); then
+        if (lazbuild --build-all --recursive --no-write-project --build-mode='release' --widgetset='qt5' "${REPLY}" > "${TMP[out]}"); then
             printf '\x1b[32m\t[%s]\tbuild project\t%s\x1b[0m\t' "${?}" "${REPLY}"
             grep --color='always' 'Linking' "${TMP[out]}"
         else
