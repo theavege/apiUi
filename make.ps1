@@ -2,21 +2,21 @@
 ##############################################################################################################
 
 Function Show-Usage {
-    Return "
+    "
 Usage: pwsh -File $($PSCommandPath) [OPTIONS]
 Options:
     build   Build program
-"
+" | Out-Host
 }
 
 Function Request-File {
-    ForEach ($REPLY in $args) {
-        $params = @{
-            Uri = $REPLY
-            OutFile = (Split-Path -Path $REPLY -Leaf).Split('?')[0]
+    While ($Input.MoveNext()) {
+        $VAR = @{
+            Uri = $Input.Current
+            OutFile = (Split-Path -Path $Input.Current -Leaf).Split('?')[0]
         }
-        Invoke-WebRequest @params | Out-Null
-        Return $params.OutFile
+        Invoke-WebRequest @VAR
+        Return $VAR.OutFile
     }
 }
 
@@ -26,7 +26,7 @@ Function Install-Program {
             'msi' {
                 & msiexec /passive /package $Input.Current | Out-Host
             }
-            'exe' {
+            Default {
                 & ".\$($Input.Current)" /SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Host
             }
         }
@@ -35,57 +35,72 @@ Function Install-Program {
 }
 
 Function Build-Project {
+    @(
+        @{
+            Cmd = 'lazbuild'
+            Url = 'https://fossies.org/windows/misc/lazarus-3.6-fpc-3.2.2-win64.exe'
+            Path = "C:\Lazarus"
+        }
+    ) | ForEach-Object {
+        If (! (Test-Path -Path $_.Path)) {
+            $_.Url | Request-File | Install-Program
+            $env:PATH+=";$($_.Path)"
+            ".... install $((Get-Command $_.Cmd).Source)" | Out-Host
+        }
+    }
     $VAR = @{
+        Src = 'Lazarus'
         Use = 'use'
-        Cmd = 'lazbuild'
-        Url = 'https://fossies.org/windows/misc/lazarus-3.6-fpc-3.2.2-win64.exe'
-        Path = "C:\Lazarus"
+        Pkg = 'use/components.txt'
     }
-    Try {
-        Get-Command $VAR.Cmd
-    } Catch {
-        "Install $($VAR.Path)" | Out-Host
-        Request-File $VAR.Url | Install-Program
-        $env:PATH+=";$($VAR.Path)"
-        Get-Command $VAR.Cmd
-    }
-    If (Test-Path -Path $($VAR.Use)) {
-        & git submodule update --init --recursive --force --remote | Out-Host
-        $COMPONENTS = "$($VAR.Use)\components.txt"
-        If (Test-Path -Path $COMPONENTS) {
-            'Download packages:' | Out-Host
-            Get-Content -Path $COMPONENTS | ForEach-Object {
-                If ((! (& $VAR.Cmd --verbose-pkgsearch $_ )) &&
-                    (! (& $VAR.Cmd --add-package $_)) &&
-                    (! (Test-Path -Path "$($VAR.Use)\$($_)"))) {
-                        "    download package $($_)" | Out-Host
-                        $OutFile = Request-File "https://packages.lazarus-ide.org/$($_).zip"
-                        Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Use)\$($_)" -Force
+    If (Test-Path -Path $VAR.Use) {
+        If ((Test-Path -Path '.gitmodules') &&
+            (& git submodule update --init --recursive --force --remote)) {
+                ".... [$($LastExitCode)] git submodule update" | Out-Host
+            }
+        If (Test-Path -Path $VAR.Pkg) {
+            Get-Content -Path $VAR.Pkg | ForEach-Object {
+                If ((! (& lazbuild --verbose-pkgsearch $_ )) &&
+                    (! (& lazbuild --add-package $_)) &&
+                    (! (Test-Path -Path "$($VAR.Pkg)\$($_)"))) {
+                        $OutFile = "https://packages.lazarus-ide.org/$($_).zip" | Request-File
+                        Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Pkg)\$($_)" -Force
                         Remove-Item $OutFile
+                        ".... download package $($_)" | Out-Host
                     }
             }
         }
-        'Add dependencies:' | Out-Host
-        Get-ChildItem -Filter '*.lpk' -Recurse -File –Path 'use'| Sort-Object | ForEach-Object {
-            "    add dependence $($_)" | Out-Host
-            & $VAR.Cmd --add-package-link $_ | Out-Host
-        }
+        Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $VAR.Use |
+            ForEach-Object { $Result = @() } {
+                If (& lazbuild --add-package-link $_) {
+                    $Result += ".... [$($LastExitCode)] add dependence $($_)"
+                }
+            } { $Result | Out-Host }
     }
-    'Build projects:' | Out-Host
-    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path 'Lazarus'| Sort-Object | ForEach-Object {
-        "    build project $($_)" | Out-Host
-        If (! (& $VAR.Cmd --no-write-project --recursive $_)) {
-            & $VAR.Cmd --no-write-project --recursive $_ | Out-Host
-            $exitCode = $LastExitCode
-            Throw $exitCode
+    Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $VAR.Src |
+        ForEach-Object {
+            $Result = @()
+            $exitCode = 0
+        } {
+            $Tmp = (New-TemporaryFile).Name
+            & lazbuild --build-all --recursive --no-write-project --build-mode='release' $_ |
+                Out-File -FilePath $Tmp -Force
+            If ($LastExitCode -eq 0) {
+                $Result += Get-Content -Path $Tmp | Select-String -Pattern 'Linking'
+            } Else {
+                $exitCode+=1
+                $Result += Get-Content -Path $Tmp | Select-String -Pattern 'Error:', 'Fatal:'
+            }
+            Remove-Item $Tmp
+        } {
+            $Result | Out-Host
+            Exit $exitCode
         }
-    }
-    "Done!" | Out-Host
 }
 
 Function Switch-Action {
     $ErrorActionPreference = 'stop'
-    Set-PSDebug -Strict # -Trace 1
+    Set-PSDebug -Strict #-Trace 1
     Invoke-ScriptAnalyzer -EnableExit -Path $PSCommandPath
     If ($args.count -gt 0) {
         Switch ($args[0]) {
