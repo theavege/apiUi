@@ -51,7 +51,7 @@ Function Build-Project {
     $VAR = @{
         Src = 'Lazarus'
         Use = 'use'
-        Pkg = 'use/components.txt'
+        Pkg = 'use\components.txt'
     }
     If (Test-Path -Path $VAR.Use) {
         If ((Test-Path -Path '.gitmodules') &&
