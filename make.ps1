@@ -62,9 +62,9 @@ Function Build-Project {
             Get-Content -Path $VAR.Pkg | ForEach-Object {
                 If ((! (& lazbuild --verbose-pkgsearch $_ )) &&
                     (! (& lazbuild --add-package $_)) &&
-                    (! (Test-Path -Path "$($VAR.Pkg)\$($_)"))) {
+                    (! (Test-Path -Path "$($VAR.Use)\$($_)"))) {
                         $OutFile = "https://packages.lazarus-ide.org/$($_).zip" | Request-File
-                        Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Pkg)\$($_)" -Force
+                        Expand-Archive -Path $OutFile -DestinationPath "$($VAR.Use)\$($_)" -Force
                         Remove-Item $OutFile
                         ".... download package $($_)" | Out-Host
                     }
