@@ -24,3 +24,5 @@ files
 /Lazarus/Xml/project1.lpr
 /Lazarus/Xml/project1.lps
 /Lazarus/Xml/project1.res
+*.lps
+*.o

@@ -27,7 +27,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core"/>
+            <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core;..\..\..\Xml;..\..\..\Xpress;..\..\..\Utils;..\..\..\Xml\json;..\..\..\Xml\yaml;..\..\..\Xml\IpmScanner;..\..\..\..\use\Indy10\Indy10\Core"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -68,7 +68,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core"/>
+            <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core;..\..\..\Xml;..\..\..\Xpress;..\..\..\Utils;..\..\..\Xml\json;..\..\..\Xml\yaml;..\..\..\Xml\IpmScanner;..\..\..\..\use\Indy10\Indy10\Core"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -109,7 +109,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="2">
+    <Units Count="9">
       <Unit0>
         <Filename Value="stompTest.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -121,6 +121,34 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\Xml\Xmlz.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Xpress\ParserClasses.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\Utils\igGlobals.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Xml\json\jsnAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Xml\yaml\yamlAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Xml\IpmScanner\IpmAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -131,7 +159,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core"/>
+      <OtherUnitFiles Value=".;..;$(LazarusDir)\components\Indy10\Lib\Protocols;$(LazarusDir)\components\Indy10\Lib\System;$(LazarusDir)\components\Indy10\Lib\Core;..\..\..\Xml;..\..\..\Xpress;..\..\..\Utils;..\..\..\Xml\json;..\..\..\Xml\yaml;..\..\..\Xml\IpmScanner;..\..\..\..\use\Indy10\Indy10\Core"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

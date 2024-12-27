@@ -16,7 +16,7 @@ function priv_lazbuild
         case ${ID:?} in
             debian | ubuntu)
                 sudo apt-get update
-                sudo apt-get install -y lazarus{-ide-qt5,} &
+                sudo apt-get install -y lazarus &
                 ;;
         esac
     fi
@@ -47,7 +47,7 @@ function priv_lazbuild
                     fi
             done < "${VAR[pkg]}"
         fi
-        find "${VAR[use]}" -type 'f' -name '*.lpk' -print -exec \
+        find "${VAR[use]}" -type 'f' -name '*.lpk' -printf '\033[32m\tadd package link\t%p\033[0m\n' -exec \
             lazbuild --add-package-link {} + 1>&2
     fi
     declare -i errors=0
@@ -55,7 +55,7 @@ function priv_lazbuild
         declare -A TMP=(
             [out]=$(mktemp)
         )
-        if (lazbuild --build-all --recursive --no-write-project --build-mode='release' --widgetset='qt5' "${REPLY}" > "${TMP[out]}"); then
+        if (lazbuild --build-all --recursive --no-write-project --build-mode='release' "${REPLY}" > "${TMP[out]}"); then
             printf '\x1b[32m\t[%s]\t%s\x1b[0m\n' "${?}" "${REPLY}"
             grep --color='always' 'Linking' "${TMP[out]}"
         else
@@ -81,4 +81,5 @@ function priv_main
     fi
 )
 
+clear
 priv_main "${@}" >/dev/null

@@ -4,11 +4,13 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Debug"/>
-    <Units Count="37">
+    <Units Count="38">
       <Unit0>
         <Filename Value="yamlTest.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="39" Y="3"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="17"/>
+        <CursorPos X="10" Y="24"/>
         <UsageCount Value="157"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -44,7 +46,6 @@
       </Unit3>
       <Unit4>
         <Filename Value="..\Xml\yaml\yamlAnalyser.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="388"/>
         <CursorPos Y="400"/>
@@ -290,8 +291,18 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit36>
+      <Unit37>
+        <Filename Value="..\..\use\HtmlViewer\HtmlViewer\source\DitherUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
     </Units>
-    <JumpHistory Count="27" HistoryIndex="26">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="..\Xml\yaml\yamlAnalyser.pas"/>
         <Caret Line="168" TopLine="157"/>
@@ -397,6 +408,14 @@
       <Position27>
         <Filename Value="..\Utils\stdvcl.pas"/>
       </Position27>
+      <Position28>
+        <Filename Value="..\Xml\yaml\yamlAnalyser.pas"/>
+        <Caret Line="400" TopLine="388"/>
+      </Position28>
+      <Position29>
+        <Filename Value="yamlTest.lpr"/>
+        <Caret Line="24" Column="10" TopLine="17"/>
+      </Position29>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

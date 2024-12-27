@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Title Value="Test"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -14,8 +16,81 @@
     <i18n>
       <EnableI18N LFM="False"/>
     </i18n>
-    <BuildModes Count="1">
+    <BuildModes Count="3">
       <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="Test"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\..\..\Xpress;..\..\..\wsdlStub;..\..\json;..\..\yaml;..\..\IpmScanner;..\..;..\..\..\Components\Indy10\Lib\Core;..\..\..\Components\Indy10\Lib\System;..\..\..\Components\Indy10\Lib\Protocols;..\..\..\Html;..\..\..\Utils;..\..\..\Utils\a2bStringList;..\..\..\Utils\dcpCrypt2\Hashes;..\..\..\Utils\dcpCrypt2;.."/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf3"/>
+              <UseHeaptrc Value="True"/>
+              <TrashVariables Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="Test"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\..\..\Xpress;..\..\..\wsdlStub;..\..\json;..\..\yaml;..\..\IpmScanner;..\..;..\..\..\Components\Indy10\Lib\Core;..\..\..\Components\Indy10\Lib\System;..\..\..\Components\Indy10\Lib\Protocols;..\..\..\Html;..\..\..\Utils;..\..\..\Utils\a2bStringList;..\..\..\Utils\dcpCrypt2\Hashes;..\..\..\Utils\dcpCrypt2;.."/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <RunWithoutDebug Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -26,27 +101,30 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <RequiredPackages Count="6">
+    <RequiredPackages Count="7">
       <Item1>
-        <PackageName Value="FrameViewer09"/>
+        <PackageName Value="indylaz"/>
       </Item1>
       <Item2>
-        <PackageName Value="fpc_markdown"/>
+        <PackageName Value="FrameViewer09"/>
       </Item2>
       <Item3>
-        <PackageName Value="TurboPowerIPro"/>
+        <PackageName Value="fpc_markdown"/>
       </Item3>
       <Item4>
-        <PackageName Value="virtualtreeview_package"/>
+        <PackageName Value="TurboPowerIPro"/>
       </Item4>
       <Item5>
-        <PackageName Value="SynEdit"/>
+        <PackageName Value="virtualtreeview_package"/>
       </Item5>
       <Item6>
-        <PackageName Value="LCL"/>
+        <PackageName Value="SynEdit"/>
       </Item6>
+      <Item7>
+        <PackageName Value="LCL"/>
+      </Item7>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="5">
       <Unit0>
         <Filename Value="Test.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -64,6 +142,14 @@
         <Filename Value="..\..\..\Xpress\ParserClasses.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\proto3Analyser.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\proto3Parser.PAS"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -74,7 +160,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\..\..\Xpress;..\..\..\wsdlStub;..\..\json;..\..\yaml;..\..\IpmScanner;..\..;..;..\..\..\Components\Indy10\Lib\Core;..\..\..\Components\Indy10\Lib\System;..\..\..\Components\Indy10\Lib\Protocols;..\..\..\Html;..\..\..\Utils;..\..\..\Utils\a2bStringList;..\..\..\Utils\dcpCrypt2\Hashes;..\..\..\Utils\dcpCrypt2"/>
+      <OtherUnitFiles Value="..\..\..\Xpress;..\..\..\wsdlStub;..\..\json;..\..\yaml;..\..\IpmScanner;..\..;..\..\..\Components\Indy10\Lib\Core;..\..\..\Components\Indy10\Lib\System;..\..\..\Components\Indy10\Lib\Protocols;..\..\..\Html;..\..\..\Utils;..\..\..\Utils\a2bStringList;..\..\..\Utils\dcpCrypt2\Hashes;..\..\..\Utils\dcpCrypt2;.."/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

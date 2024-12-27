@@ -21,8 +21,8 @@ uses
   cthreads ,
   {$ENDIF}{$ENDIF}
   Interfaces , // this includes the LCL widgetset
-  Forms, FrameViewer09 , virtualtreeview_package , TestUnit
-  { you can add units after this };
+  Forms, FrameViewer09, virtualtreeview_package, indylaz, TestUnit,
+  proto3Analyser, proto3Parser;
 
 {$R *.res}
 

@@ -21,7 +21,7 @@
       <MajorVersionNr Value="10"/>
       <MinorVersionNr Value="4"/>
       <RevisionNr Value="1"/>
-      <BuildNr Value="12440"/>
+      <BuildNr Value="12441"/>
       <StringTable ProductVersion="10.3.0.11959"/>
     </VersionInfo>
     <BuildModes Count="3">
@@ -35,7 +35,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols"/>
+            <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\..\use\Indy10\Indy10\Core;..\..\use\VirtualTreeViewV5\VirtualTreeViewV5\Source\units\gtk2;..\wiremock;..\pegasimul8r"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -86,7 +86,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols"/>
+            <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\..\use\Indy10\Indy10\Core;..\..\use\VirtualTreeViewV5\VirtualTreeViewV5\Source\units\gtk2;..\wiremock;..\pegasimul8r"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -130,36 +130,42 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <RequiredPackages Count="9">
+    <RequiredPackages Count="11">
       <Item1>
-        <PackageName Value="indylaz"/>
+        <PackageName Value="fpc_markdown"/>
       </Item1>
       <Item2>
-        <PackageName Value="FCL"/>
+        <PackageName Value="FrameViewer09"/>
       </Item2>
       <Item3>
-        <PackageName Value="Abbrevia"/>
+        <PackageName Value="indylaz"/>
       </Item3>
       <Item4>
-        <PackageName Value="TAChartLazarusPkg"/>
+        <PackageName Value="FCL"/>
       </Item4>
       <Item5>
-        <PackageName Value="TurboPowerIPro"/>
+        <PackageName Value="Abbrevia"/>
       </Item5>
       <Item6>
-        <PackageName Value="SQLDBLaz"/>
+        <PackageName Value="TAChartLazarusPkg"/>
       </Item6>
       <Item7>
-        <PackageName Value="SynEdit"/>
+        <PackageName Value="TurboPowerIPro"/>
       </Item7>
       <Item8>
-        <PackageName Value="virtualtreeview_package"/>
+        <PackageName Value="SQLDBLaz"/>
       </Item8>
       <Item9>
-        <PackageName Value="LCL"/>
+        <PackageName Value="SynEdit"/>
       </Item9>
+      <Item10>
+        <PackageName Value="virtualtreeview_package"/>
+      </Item10>
+      <Item11>
+        <PackageName Value="LCL"/>
+      </Item11>
     </RequiredPackages>
-    <Units Count="13">
+    <Units Count="17">
       <Unit0>
         <Filename Value="apiUi.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -220,6 +226,23 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="ProgressInterface"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\use\VirtualTreeViewV5\VirtualTreeViewV5\Source\units\gtk2\fakeactivex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FakeActiveX"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\wiremock\wiremockmapping.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\pegasimul8r\pegasimul8rmapping.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -230,7 +253,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols"/>
+      <OtherUnitFiles Value="..\Mq;..\Xml;..\Xml\json;..\Xml\yaml;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Html;..\ProgressStatus;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\..\use\Indy10\Indy10\Core;..\..\use\VirtualTreeViewV5\VirtualTreeViewV5\Source\units\gtk2;..\wiremock;..\pegasimul8r"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

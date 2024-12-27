@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Debug"/>
-    <Units Count="9">
+    <Units Count="19">
       <Unit0>
         <Filename Value="stompTest.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,8 +17,12 @@
         <ComponentName Value="Form5"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <CursorPos X="48" Y="5"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="9"/>
+        <CursorPos X="57" Y="16"/>
         <UsageCount Value="22"/>
+        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\lazarus\components\Indy10\Lib\System\IdException.pas"/>
@@ -51,7 +55,6 @@
       </Unit6>
       <Unit7>
         <Filename Value="..\StompClient.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="14" Y="32"/>
@@ -64,8 +67,112 @@
         <CursorPos X="27" Y="181"/>
         <UsageCount Value="10"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\Xml\Xmlz.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="443"/>
+        <CursorPos X="6" Y="450"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\Xml\xmlio.pas"/>
+        <TopLine Value="64"/>
+        <CursorPos X="22" Y="64"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\Xpress\ParserClasses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\Xml\XMLPARSER.PAS"/>
+        <UnitName Value="XmlParser"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="6" Y="7"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\Utils\igGlobals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\Xml\json\jsnAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\Xml\yaml\yamlAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\Xml\Ipmz.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="261"/>
+        <CursorPos X="17" Y="268"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\Xml\IpmScanner\IpmAnalyser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\use\Indy10\Indy10\Core\IdSync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="..\..\..\Xml\xmlio.pas"/>
+        <Caret Line="64" Column="22" TopLine="64"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Xml\XMLPARSER.PAS"/>
+        <Caret Line="7" Column="6"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Xml\Xmlz.pas"/>
+        <Caret Line="450" Column="6" TopLine="443"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Xml\Ipmz.pas"/>
+        <Caret Line="268" Column="17" TopLine="261"/>
+      </Position4>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default"/>

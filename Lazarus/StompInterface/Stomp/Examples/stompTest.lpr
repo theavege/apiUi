@@ -7,7 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, indylaz , MainFormClient ;
+  Forms, indylaz, IdSync, MainFormClient, Xmlz, IpmAnalyser, yamlAnalyser,
+  jsnAnalyser, ParserClasses, igGlobals ;
 
 {$R *.res}
 

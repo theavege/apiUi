@@ -22,14 +22,14 @@
         <CursorPos Y="60"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="Source\RegExpr.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="3819"/>
-        <CursorPos Y="3820"/>
+        <TopLine Value="1719"/>
+        <CursorPos X="27" Y="1725"/>
         <UsageCount Value="57"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -193,10 +193,9 @@
       <Unit32>
         <Filename Value="..\..\..\..\..\usr\lib64\lazarus\components\synedit\syneditsearch.pp"/>
         <UnitName Value="SynEditSearch"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="3"/>
-        <CursorPos Y="9"/>
+        <TopLine Value="2"/>
+        <CursorPos X="53" Y="9"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit32>
@@ -316,7 +315,7 @@
       </Position28>
       <Position29>
         <Filename Value="..\..\..\..\..\usr\lib64\lazarus\components\synedit\syneditsearch.pp"/>
-        <Caret Line="9" Column="53" TopLine="37"/>
+        <Caret Line="9" Column="53" TopLine="2"/>
       </Position29>
     </JumpHistory>
     <RunParams>

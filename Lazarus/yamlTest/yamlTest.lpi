@@ -27,7 +27,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub"/>
+            <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub;..\..\use\HtmlViewer\HtmlViewer\source"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -68,7 +68,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub"/>
+            <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub;..\..\use\HtmlViewer\HtmlViewer\source"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -124,7 +124,7 @@
         <PackageName Value="LCL"/>
       </Item7>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="yamlTest.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -146,6 +146,10 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="..\..\use\HtmlViewer\HtmlViewer\source\DitherUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -156,7 +160,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub"/>
+      <OtherUnitFiles Value="..\Xml\yaml;..\Xml;..\Xml\json;..\Xml\IpmScanner;..\Utils;..\Utils\dcpCrypt2;..\Utils\dcpCrypt2\Ciphers;..\Utils\dcpCrypt2\Hashes;..\Utils\a2bStringList;..\Xpress;..\Mq;..\StompInterface;..\TacoInterface;..\StompInterface\Stomp;..\Components\Indy10\Lib\Core;..\Components\Indy10\Lib\System;..\Components\Indy10\Lib\Protocols;..\Html;..\wsdlStub;..\..\use\HtmlViewer\HtmlViewer\source"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
