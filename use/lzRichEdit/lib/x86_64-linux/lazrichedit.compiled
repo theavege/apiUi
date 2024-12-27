@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Lazarus Version="3.6"/>
+  <Compiler Value="/usr/bin/fpc" Date="1722038400"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fu/home/tux/apiUi/use/lzRichEdit/widgetset -Fu/home/tux/apiUi/use/lzRichEdit/interfaces/win32 -Fu/home/tux/apiUi/use/lzRichEdit/interfaces/gtk2 -Fu/home/tux/.lazarus/lib/units/x86_64-linux -Fu/home/tux/.lazarus/lib/LazUtils/lib/x86_64-linux -Fu/home/tux/.lazarus/lib/freetypelaz/lib/x86_64-linux -Fu/home/tux/.lazarus/lib/LCLBase/units/x86_64-linux -Fu/home/tux/.lazarus/lib/units/x86_64-linux/gtk2 -Fu/home/tux/apiUi/use/lzRichEdit/ -FU/home/tux/apiUi/use/lzRichEdit/lib/x86_64-linux/ -dLCL -dLCLgtk2 lazrichedit.pas"/>
+  <Complete Value="False" MainPPUExists="False"/>
+</CONFIG>
