@@ -1,6 +1,6 @@
 {
-    "app" : "test",
-    "lib" : ".",
+    "app" : "Lazarus",
+    "lib" : "use",
     "tst" : "tst",
     "pkg" : [
         "Indy10",
