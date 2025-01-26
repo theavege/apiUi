@@ -213,7 +213,7 @@ begin
   try
     if ParamCount > 0 then
       case ParamStr(1) of
-        'build': BuildAll(['BGRABitmap', 'FPSpreadsheet', 'ATFlatControls', 'EncConv', 'ATSynEdit']);
+        'build': BuildAll(['Indy10', 'HtmlViewer', 'VirtualTreeViewV5', 'Abbrevia', 'LazRichView']);
         else
           OutLog(etError, ParamStr(1));
       end;
